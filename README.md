@@ -12,6 +12,7 @@ I updated my audio visualizer for Crescent. You can still use your microphone or
 3. Start the code and pick your audio source.
 4. Pick a UI
 5. Enjoy!
+**Windows may show a SmartScreen warning because the app is not signed. Click More info and then Run anyway**.
 ## Run from source
 
 Tested with Python 3.13 on Windows.
@@ -52,8 +53,8 @@ Everything you see on the screen comes from the sound, so it works with every so
 - **Bars:** There are 16 bars, and each bar is one frequency range. The louder a range is, the taller its bar gets.
 - **Wave:** This is the real sound wave, drawn as a line (like on an oscilloscope).
 - **Fiur:** The figure jumps higher when the music is louder.
-
- ## Controls
+- 
+## Controls
 
 - **M** – use microphone
 - **F** – load an audio file (wav, mp3, ogg, flac)
