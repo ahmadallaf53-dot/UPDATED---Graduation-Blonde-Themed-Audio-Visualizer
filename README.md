@@ -43,7 +43,7 @@ Everything you see on the screen comes from the sound, so it works with every so
 - The bars, the wave, and the circle do not jump directly to a new value—they react quickly when the sound gets louder and fall back smoothly when it gets quieter.
 - In circle mode, the bass frequencies also spawn glowing particles that drift outward from the ring.
 - The loudness (RMS) of each piece decides how high the character jumps.
-- Pygame draws everything on the screen, including a progress bar at the bottom when playing an audio file[cite: 2, 3].
+- Pygame draws everything on the screen, including a progress bar at the bottom when playing an audio file.
 ## Music and image credits
 
 -  The demo video uses The Britons by Kevibn MAcLeod
