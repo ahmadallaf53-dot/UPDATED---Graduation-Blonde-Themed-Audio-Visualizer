@@ -32,13 +32,6 @@ python -m PyInstaller --noconfirm --clean --noconsole --name GraduationBlondeVis
 ```
 
 The result is in `dist/GraduationBlondeVisualizer/`. Always keep the whole folder together.
-
-## Build the .exe yourself
-
-pip install pyinstaller
-python -m PyInstaller --noconfirm --clean --noconsole --name GraduationBlondeVisualizer --add-data "bear.png;." --add-data "background.jpg;." --add-data "frankocean.png;." --add-data "blonded.jpg;." v4.py
-
-The result is in `dist/GraduationBlondeVisualizer/`. Always keep the whole folder together.
 **Windows may show a SmartScreen warning because the app is not signed. Click More info and then Run anyway**.
 
 ## What is new 
