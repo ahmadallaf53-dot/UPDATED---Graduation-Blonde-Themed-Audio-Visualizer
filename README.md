@@ -1,5 +1,5 @@
 # UPDATED---Graduation-Blonde-Themed-Audio-Visualizer
-I updated my audio visualizer for Cresent. You can still use your microphone or load a song from your computer, and now there is also a new circle mode with particles, custom themes, and smoother visuals alongside the bars and waveform. Built in Python with Pygame and a few audio libraries.
+I updated my audio visualizer for Crescent. You can still use your microphone or load a song from your computer, and now there is also a new circle mode with particles, custom themes, and smoother visuals alongside the bars and waveform. Built in Python with Pygame and a few audio libraries.
 
 ![Screenshot](screenshot.png)
 
@@ -46,7 +46,7 @@ Everything you see on the screen comes from the sound, so it works with every so
 - Pygame draws everything on the screen, including a progress bar at the bottom when playing an audio file.
 ## Music and image credits
 
--  The demo video uses The Britons by Kevibn MAcLeod and Gateawy by Banjamin Andrews
+-  The demo video uses The Britons by Kevin MacLeod and Getaway by Banjamin Andrews
 - This is a non-commercial fan project. *Graduation* and *Blonde* and their artwork belong to their respective owners. The images are used for demonstration only and can be replaced with your own images using the same file names.
 - The Frank Ocean image was made by me, I hope you like it :).
 
