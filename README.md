@@ -7,7 +7,7 @@ I updated my audio visualizer for Crescent. You can still use your microphone or
 
 ## Thats how you try it: 
 
-1. Go to the my latest release or try this link (https://github.com/ahmadallaf53-dot/Graduation-Blonde-Themed-Audio-Visualizer/releases/latest).
+1. Go to the my latest release or try this link https://github.com/ahmadallaf53-dot/UPDATED---Graduation-Blonde-Themed-Audio-Visualizer/releases/tag/v2.1
 2. Download `GraduationBlondeVisualizer-windows.zip` and unzip the whole folder.
 3. Start the code and pick your audio source.
 4. Pick a UI
