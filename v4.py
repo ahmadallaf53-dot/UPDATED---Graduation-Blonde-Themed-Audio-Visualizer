@@ -9,7 +9,8 @@ import soundfile as sf
 import pygame
 from tkinter import filedialog
 import numpy as np
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+import sys
+BASE_DIR = getattr(sys, "_MEIPASS", os.path.dirname(os.path.abspath(__file__)))
 screen_width = 1000
 screen_height = 1000
 background_colour = (151, 89,154)
