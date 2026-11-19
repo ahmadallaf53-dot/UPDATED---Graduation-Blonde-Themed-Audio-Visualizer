@@ -3,7 +3,7 @@ I updated my audio visualizer for Cresent. You can still use your microphone or 
 
 ![Screenshot](screenshot.png)
 
-**Demo video:** https://youtu.be/s5xd160k-S0
+**Demo video:** [https://youtu.be/s5xd160k-S0](https://youtu.be/JAy7dZpy_dY)
 
 ## Thats how you try it: 
 
@@ -46,7 +46,7 @@ Everything you see on the screen comes from the sound, so it works with every so
 - Pygame draws everything on the screen, including a progress bar at the bottom when playing an audio file.
 ## Music and image credits
 
--  The demo video uses The Britons by Kevibn MAcLeod
+-  The demo video uses The Britons by Kevibn MAcLeod and Gateawy by Banjamin Andrews
 - This is a non-commercial fan project. *Graduation* and *Blonde* and their artwork belong to their respective owners. The images are used for demonstration only and can be replaced with your own images using the same file names.
 - The Frank Ocean image was made by me, I hope you like it :).
 
