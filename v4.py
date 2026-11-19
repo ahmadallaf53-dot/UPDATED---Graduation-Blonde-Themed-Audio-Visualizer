@@ -9,7 +9,7 @@ import soundfile as sf
 import pygame
 from tkinter import filedialog
 import numpy as np
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 screen_width = 1000
 screen_height = 1000
 background_colour = (151, 89,154)
@@ -31,17 +31,19 @@ THEMES_DEF = [
 panel_surf = pygame.Surface((screen_width, PANEL_H), pygame.SRCALPHA)
 themes = []
 
-for name, char_file, bg_file,style in THEMES_DEF:
-    if os.path.exists(char_file) and os.path.exists(bg_file):
-        char_img = pygame.image.load(char_file).convert_alpha()
+for name, char_file, bg_file, style in THEMES_DEF:
+    char_path = os.path.join(BASE_DIR, char_file)
+    bg_path = os.path.join(BASE_DIR, bg_file)
+    if os.path.exists(char_path) and os.path.exists(bg_path):
+        char_img = pygame.image.load(char_path).convert_alpha()
         char_img = pygame.transform.scale(char_img, (200, 250))
-        bg_img = pygame.image.load(bg_file).convert()
+        bg_img = pygame.image.load(bg_path).convert()
         bg_img = pygame.transform.scale(bg_img, (screen_width, screen_height))
         themes.append((name, char_img, bg_img, style))
 
 
 if not themes:
-    raise SystemExit("Could not find themes pictures :(")
+    raise SystemExit("Could not find themes pictures in {BASE_DIR} :(")
 
 base_count = len(themes)
 CUSTOM_STYLE = {"panel": (40,40,60,200), "track": (90,90,110), "fill": (255,170,50),
@@ -162,13 +164,10 @@ def draw_bars(spectrum, style):
     
     bar_width = screen_width / NUM_BARS
     for i in range(NUM_BARS):
-        speed = 0.6 if targets[i] > bar_heights[i] else 0.12   # schnell hoch, langsam runter
+        speed = 0.6 if targets[i] > bar_heights[i] else 0.12   
         bar_heights[i] += (targets[i] - bar_heights[i]) * speed
 
-        if themes[current_theme][0].startswith("Blonde"):
-            color =color = mix(style["bar_low"], style["bar_high"], i / (NUM_BARS - 1))
-        else:
-            color =color = mix(style["bar_low"], style["bar_high"], i / (NUM_BARS - 1))
+        color = mix(style["bar_low"], style["bar_high"], i / (NUM_BARS - 1))
 
         x = int(i * bar_width) + 4
         h = int(bar_heights[i])
@@ -179,7 +178,7 @@ def draw_wave(samples, style):
     global wave_ref
 
     seg = samples[:1024].reshape(256, 4).mean(axis=1)
-    wave_ref = max(np.abs(seg).max(), wave_ref * 0.995, 2000)   # Auto-Gain
+    wave_ref = max(np.abs(seg).max(), wave_ref * 0.995, 2000)   
     target = seg / wave_ref * 300
     wave_y[:] += (target - wave_y) * 0.3
 
