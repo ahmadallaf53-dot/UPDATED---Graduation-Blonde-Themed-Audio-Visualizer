@@ -24,7 +24,7 @@ Song Progress Bar: Added a progress bar at the bottom of the screen that appears
 Better Audio Reaction (Auto-Gain & Hanning Window): Added a Hanning window and automatic volume scaling so both quiet and loud songs look clean and responsive, with fast jump-up and smooth fall-down animations
 
 Fullscreen & Quality of Life: Added F11 for fullscreen mode, automatic return to home when a song finishes, and better audio device checks so the app doesn't crash if no mic or output is connected
-
+![Screenshot](screenshot2.png)
 
 ## What you see (explained in detail)
 
