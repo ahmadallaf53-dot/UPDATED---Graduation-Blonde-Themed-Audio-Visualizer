@@ -37,10 +37,10 @@ Everything you see on the screen comes from the sound, so it works with every so
 ## How it works
 
 - The program reads the sound in small pieces (1024 samples). It gets them from the microphone with PyAudio or from a file with soundfile. For files, the program asks the pygame mixer where the song is right now, so the visuals match what you hear.
-- Before splitting the sound, a Hann window (`np.hanning`) is applied to smooth the edges of each piece, and NumPy does an FFT (`np.fft.rfft`) to turn it into frequencies.
-- The frequencies are put into 16 groups. The groups get bigger for the high sounds, so the bass has more space.
+- Before splitting the sound, a Hann window (`np.hanning`) is applied to smooth the edges of each piece and NumPy does an FFT (`np.fft.rfft`) to turn it into frequencies.
+- The frequencies are put into 16 groups. The groups get bigger for the high sounds, so that the bass has more space.
 - Automatic gain scaling adjusts the sensitivity to the current volume, so both quiet and loud songs look good without clipping.
-- The bars, the wave, and the circle do not jump directly to a new value—they react quickly when the sound gets louder and fall back smoothly when it gets quieter.
+- The bars, the wave, and the circle do not jump directly to a new value, but rather react quickly when the sound gets louder and fall back smoothly when it gets quieter.
 - In circle mode, the bass frequencies also spawn glowing particles that drift outward from the ring.
 - The loudness (RMS) of each piece decides how high the character jumps.
 - Pygame draws everything on the screen, including a progress bar at the bottom when playing an audio file.
