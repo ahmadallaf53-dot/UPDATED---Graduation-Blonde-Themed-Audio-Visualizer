@@ -43,7 +43,7 @@ for name, char_file, bg_file, style in THEMES_DEF:
 
 
 if not themes:
-    raise SystemExit("Could not find themes pictures in {BASE_DIR} :(")
+    raise SystemExit(f"Could not find themes pictures in {BASE_DIR} :(")
 
 base_count = len(themes)
 CUSTOM_STYLE = {"panel": (40,40,60,200), "track": (90,90,110), "fill": (255,170,50),
