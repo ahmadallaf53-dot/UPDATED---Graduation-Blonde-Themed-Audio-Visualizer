@@ -13,7 +13,6 @@ I updated my audio visualizer for Crescent. You can still use your microphone or
 4. Pick a UI
 5. Enjoy!
 ## Run from source
-## Run from source
 
 Tested with Python 3.13 on Windows.
 
