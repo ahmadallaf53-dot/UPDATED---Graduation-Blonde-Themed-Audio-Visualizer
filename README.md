@@ -12,7 +12,8 @@ I updated my audio visualizer for Crescent. You can still use your microphone or
 3. Start the code and pick your audio source.
 4. Pick a UI
 5. Enjoy!
-**Windows may show a SmartScreen warning because the app is not signed. Click More info and then Run anyway**.
+
+- **Windows may show a SmartScreen warning because the app is not signed. Click More info and then Run anyway**.
 ## Run from source
 
 Tested with Python 3.13 on Windows.
