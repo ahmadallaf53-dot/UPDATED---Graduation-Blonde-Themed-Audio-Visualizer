@@ -11,9 +11,23 @@ I updated my audio visualizer for Crescent. You can still use your microphone or
 2. Download `GraduationBlondeVisualizer-windows.zip` and unzip the whole folder.
 3. Start the code and pick your audio source.
 4. Pick a UI
-5. Enjoy my excellent coding !
+5. Enjoy!
+## Run from source
+Tested with Python 3.13 on Windows.
 
-**Windows may show a SmartScreen warning because the app is not signed. Click More info → Run anyway**.
+pip install -r requirements.txt
+python v4.py
+
+Keep the four images (`bear.png`, `background.jpg`, `frankocean.png`, `blonded.jpg`) in the same folder as the script.
+
+## Build the .exe yourself
+
+pip install pyinstaller
+python -m PyInstaller --noconfirm --clean --noconsole --name GraduationBlondeVisualizer --add-data "bear.png;." --add-data "background.jpg;." --add-data "frankocean.png;." --add-data "blonded.jpg;." v4.py
+
+The result is in `dist/GraduationBlondeVisualizer/`. Always keep the whole folder together.
+**Windows may show a SmartScreen warning because the app is not signed. Click More info and then Run anyway**.
+
 ## What is new 
 Circle Mode & Particles: Added a third visualizer mode (W to switch) that draws a frequency ring around the center with bass-reactive particles flying outwards.
 
